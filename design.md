@@ -2,27 +2,29 @@
 
 ## Math
 
-- add
-- sub
-- mul
-- div
-- mod
+- add X Y -> A: X + Y
+- sub X Y -> A: X - Y
+- mul X Y -> A: X \* Y
+- div X Y -> A: X / Y
+- mod X Y -> A: X % Y
 
 ## Logic
 
-- and
-- or
-- not
-- eor
-- eq
-- neq
-- lt
-- gt
+- and X Y -> A: X & Y
+- or X Y -> A: X | Y
+- notx X -> X: !X 
+- noty Y -> Y: !Y
+- nota Z -> Z: !Z
+- eor X Y -> A: X ^ Y
+- eq X Y -> EQF: X == Y
+- neq X Y -> EQF: X != Y
+- lt X Y -> EQF: X < Y
+- gt X Y -> EQF: X > Y
 
 ## Device
 
-- deo
-- din
+- deo -> DeviceBus.output(id: Stack.Pop, data: Stack.Pop)
+- din -> Stack.Push(data), Stack.Push(id)
 
 ## Registers
 
