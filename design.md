@@ -28,24 +28,25 @@
 
 ## Registers
 
-- lda
-- ldx
-- ldy
-- sta
-- stx
-- sty
+- lda ADDR -> A: @ADDR
+- ldx ADDR -> X: @ADDR
+- ldy ADDR -> Y: @ADDR 
+- sta A ADDR -> @ADDR: A 
+- stx X ADDR -> @ADDR: X 
+- sty Y ADDR -> @ADDR: Y
 
 ## Transfer
 
-- tax
-- tay
-- txa
-- tya
+- tax A -> X: A 
+- tay A -> Y: A 
+- txa X -> A: X 
+- tya Y -> A: Y
+- sxy X Y -> X:Y, Y:X
 
 ## Memory
 
-- mov
-- cmov
+- mov ADDR1 ADDR2 -> @ADDR2: @ADDR1 
+- cmov EQF ADDR1 ADDR2 -> EQF? @ADDR2: @ADDR1 
 
 ## Stack
 
