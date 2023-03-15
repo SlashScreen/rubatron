@@ -8,6 +8,7 @@ module Mainboard
   # Bootstraps computer
   class BIOS
     attr_accessor :disk, :console
+
     def initialize
       @disk = Devices::Disk.new
       @console = Devices::Console.new
